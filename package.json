@@ -1,0 +1,26 @@
+{
+  "name": "video-to-mp3",
+  "version": "0.1.0",
+  "description": "Upload user-owned videos and extract MP3 audio (MVP)",
+  "main": "server/index.js",
+  "scripts": {
+    "start": "node server/index.js",
+    "dev": "nodemon server/index.js",
+    "test": "node -e \"console.log('no tests')\""
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.0",
+    "express": "^4.18.2",
+    "ffmpeg-static": "^5.1.0",
+    "fluent-ffmpeg": "^2.1.2",
+    "helmet": "^6.0.0",
+    "mime-types": "^2.1.35",
+    "multer": "^1.4.5-lts.1",
+    "rimraf": "^5.0.0",
+    "uuid": "^9.0.0"
+  }
+}
